@@ -1,0 +1,52 @@
+[
+    {
+        "id":1,
+        "name":"Story Book",
+        "title":"lorem,ipsum dolor sit amet cmdlkcdjc kdsnfkdsf sdfnds",
+        "price":0,
+        "category":"Free",
+        "image":"https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg"
+
+},
+{
+     "id":2,
+        "name":"Comedy Book",
+        "title":"lorem,ipsum dolor sit amet cmdlkcdjc kdsnfkdsf sdfnds",
+        "price":1,
+        "category":"Free",
+        "image":"https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg"
+        
+},
+{
+     "id":3,
+        "name":"Sport Book",
+        "title":"lorem,ipsum dolor sit amet cmdlkcdjc kdsnfkdsf sdfnds",
+        "price":3,
+        "category":"Free",
+        "image":"https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg"
+},
+{
+     "id":4,
+        "name":"Music Book",
+        "title":"lorem,ipsum dolor sit amet cmdlkcdjc kdsnfkdsf sdfnds",
+        "price":12,
+        "category":"Music",
+        "image":"https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg"
+},
+{
+     "id":5,
+        "name":"Horror Book",
+        "title":"lorem,ipsum dolor sit amet cmdlkcdjc kdsnfkdsf sdfnds",
+        "price":12,
+        "category":"Free",
+        "image":"https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg"
+},
+{
+     "id":6,
+        "name":"News Book",
+        "title":"lorem,ipsum dolor sit amet cmdlkcdjc kdsnfkdsf sdfnds",
+        "price":2323,
+        "category":"News",
+        "image":"https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg"
+}
+]
