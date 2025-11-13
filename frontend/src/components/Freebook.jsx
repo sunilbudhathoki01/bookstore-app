@@ -3,26 +3,25 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Cards from "./Cards";
+import axios from "axios";
 
 const Freebook = () => {
-	// fetch list.json from public folder at runtime
-	const [filterData, setFilterData] = useState([]);
-	const [loading, setLoading] = useState(true);
-
-	useEffect(() => {
-		fetch("/list.json")
-			.then((res) => {
-				if (!res.ok) throw new Error("Failed to load list.json");
-				return res.json();
-			})
-			.then((data) => {
-				setFilterData(data.filter((d) => d.category === "Free"));
-			})
-			.catch((err) => {
-				console.error(err);
-			})
-			.finally(() => setLoading(false));
-	}, []);
+	const [book,setBook]=useState([]);
+	useEffect(()=>{
+		const getBook=async()=>{
+			try {
+				const res=await axios.get("http://localhost:5000/book")
+				const data=res.data.filter((data) => data.category === "Free")
+				setBook(data)
+				console.log(data)
+			} catch (error) {
+				console.log("error",error)
+			}
+			
+		}
+		getBook()
+	})
+	
 
 	// adjusted settings: slidesToScroll should be <= slidesToShow (or 1)
 	var settings = {
@@ -74,17 +73,17 @@ const Freebook = () => {
 				</div>
 
 				<div>
-					{loading ? (
+					{/* {loading ? (
 						<p>Loading...</p>
-					) : filterData.length === 0 ? (
+					) : book.length === 0 ? (
 						<p>No free books found.</p>
-					) : (
+					) : ( */}
 						<Slider {...settings}>
-							{filterData.map((item) => (
+							{book.map((item) => (
 								<Cards item={item} key={item.id} />
 							))}
 						</Slider>
-					)}
+					{/* )} */}
 				</div>
 			</div>
 		</>
